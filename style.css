@@ -1,0 +1,116 @@
+:root {
+  --bg: #f4f1ea;
+  --paper: #fffdf8;
+  --ink: #1d1b18;
+  --muted: #6f6a61;
+  --line: #e2ddd2;
+  --accent: #c2410c;
+  --accent-soft: #fdeee4;
+  --serif: "Yu Mincho", "游明朝", "Hiragino Mincho ProN", serif;
+  --sans: "Yu Gothic UI", "游ゴシック", "Hiragino Sans", "Meiryo", sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #161513;
+    --paper: #1f1d1a;
+    --ink: #ece7dd;
+    --muted: #a39d92;
+    --line: #34312c;
+    --accent: #fb923c;
+    --accent-soft: #3a2518;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--sans);
+  line-height: 1.8;
+}
+a { color: inherit; }
+
+.masthead {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 32px 16px 0;
+}
+.brand { text-decoration: none; display: block; }
+.brand-ja { font-family: var(--serif); font-size: 40px; font-weight: 700; letter-spacing: .08em; display: block; }
+.brand-en { font-size: 12px; letter-spacing: .25em; text-transform: uppercase; color: var(--muted); }
+.tabs { display: flex; gap: 4px; margin-top: 20px; border-bottom: 1px solid var(--line); }
+.tabs a {
+  text-decoration: none; padding: 10px 16px; font-size: 14px; color: var(--muted);
+  border-bottom: 3px solid transparent; margin-bottom: -1px;
+}
+.tabs a.active { color: var(--ink); border-bottom-color: var(--accent); font-weight: 700; }
+
+main { max-width: 760px; margin: 0 auto; padding: 24px 16px 80px; }
+
+.issue-head { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 16px; }
+.issue-date { font-family: var(--serif); font-size: 30px; font-weight: 700; margin: 0; }
+.issue-label { font-size: 12px; letter-spacing: .2em; color: var(--muted); }
+
+.card {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  overflow: hidden;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 16px;
+  transition: transform .15s;
+}
+.card:hover { transform: translateY(-2px); }
+.card img { width: 100%; aspect-ratio: 16/9; object-fit: cover; display: block; }
+.card-body { padding: 16px 20px 20px; }
+.card-no { font-size: 12px; letter-spacing: .2em; color: var(--accent); font-weight: 700; }
+.card-title { font-family: var(--serif); font-size: 22px; line-height: 1.5; margin: 4px 0 8px; }
+.card-lead { color: var(--muted); font-size: 15px; margin: 0; }
+
+.search {
+  width: 100%; padding: 12px 16px; font-size: 15px; border-radius: 10px;
+  border: 1px solid var(--line); background: var(--paper); color: var(--ink); margin-bottom: 20px;
+}
+.day {
+  background: var(--paper); border: 1px solid var(--line); border-radius: 14px;
+  padding: 18px 20px; margin-bottom: 14px;
+}
+.day h2 { font-family: var(--serif); font-size: 22px; margin: 0 0 6px; }
+.day ol { margin: 0; padding: 0; list-style: none; }
+.day li { border-top: 1px solid var(--line); }
+.day li a { display: flex; gap: 14px; padding: 9px 0; text-decoration: none; }
+.day li a:hover .t { color: var(--accent); }
+.day .n { font-family: var(--serif); color: var(--muted); }
+.unread-dot { color: var(--accent); font-size: 12px; }
+
+.story-nav { display: flex; justify-content: space-between; align-items: center; gap: 8px; margin-bottom: 16px; }
+.btn {
+  border: 1px solid var(--line); background: var(--paper); color: var(--ink);
+  border-radius: 999px; padding: 8px 16px; font-size: 14px; cursor: pointer; text-decoration: none;
+}
+.btn[aria-disabled="true"] { opacity: .35; pointer-events: none; }
+.btn.saved { background: var(--accent-soft); border-color: var(--accent); color: var(--accent); }
+.story img { width: 100%; border-radius: 14px; aspect-ratio: 16/9; object-fit: cover; }
+.story h1 { font-family: var(--serif); font-size: 30px; line-height: 1.5; margin: 12px 0; }
+.story .lead { font-size: 17px; color: var(--muted); }
+.story h3 { font-size: 15px; letter-spacing: .1em; margin: 28px 0 8px; }
+.story ul { padding-left: 1.2em; }
+.story li { margin-bottom: 12px; line-height: 1.9; }
+.story .body { line-height: 1.9; }
+.terms { margin: 0; }
+.terms dt { font-weight: 700; margin-top: 12px; }
+.terms dd { margin: 4px 0 0; color: var(--muted); line-height: 1.8; }
+.why {
+  background: var(--accent-soft); border-left: 4px solid var(--accent);
+  padding: 14px 18px; border-radius: 0 10px 10px 0;
+}
+.sources a { color: var(--accent); word-break: break-all; }
+.empty { color: var(--muted); text-align: center; padding: 48px 0; }
+
+@media (max-width: 520px) {
+  .brand-ja { font-size: 30px; }
+  .story h1 { font-size: 24px; }
+}
+
+.site-note { max-width: 720px; margin: 32px auto; padding: 0 16px 32px; font-size: 13px; color: var(--muted); text-align: center; }
