@@ -23,13 +23,16 @@ function fmtDate(iso) {
 function storyId(date, no) { return `${date}/${no}`; }
 function findIssue(date) { return ISSUES.find(i => i.date === date); }
 
+// 古い号には category がないので、そのときは STORY 番号だけ出す
+function category(s) { return s.category ? `<span class="category">${esc(s.category)}</span>` : ""; }
+
 function card(issue, s) {
   const img = s.image ? `<img src="${esc(s.image)}" alt="" loading="lazy">` : "";
   const unread = read.has(storyId(issue.date, s.no)) ? "" : ` <span class="unread-dot">● 未読</span>`;
   return `<a class="card" href="#/story/${issue.date}/${s.no}">
     ${img}
     <div class="card-body">
-      <div class="card-no">STORY ${String(s.no).padStart(2, "0")}${unread}</div>
+      <div class="card-no">STORY ${String(s.no).padStart(2, "0")}${category(s)}${unread}</div>
       <h2 class="card-title">${esc(s.title)}</h2>
       <p class="card-lead">${esc(s.lead)}</p>
     </div></a>`;
@@ -68,7 +71,7 @@ function viewArchive(q = "") {
     const stories = query ? issue.stories.filter(s => matches(s, query)) : issue.stories;
     return stories.length ? dayBlock(issue, stories) : "";
   }).join("");
-  return `<input class="search" type="search" placeholder="キーワードで検索（例：Codex、値下げ）" value="${esc(q)}">
+  return `<input class="search" type="search" placeholder="キーワードで検索（例：Premiere、値下げ）" value="${esc(q)}">
     <div id="archive-list">${blocks || `<p class="empty">見つかりませんでした。</p>`}</div>`;
 }
 
@@ -109,7 +112,7 @@ function viewStory(date, no) {
     </div>
     <article class="story">
       ${s.image ? `<img src="${esc(s.image)}" alt="">` : ""}
-      <div class="card-no">STORY ${String(s.no).padStart(2, "0")}</div>
+      <div class="card-no">STORY ${String(s.no).padStart(2, "0")}${category(s)}</div>
       <h1>${esc(s.title)}</h1>
       <p class="lead">${esc(s.lead)}</p>
       ${s.background ? `<h3>そもそも何の話？</h3><p class="body">${esc(s.background)}</p>` : ""}

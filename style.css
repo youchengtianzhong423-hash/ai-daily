@@ -65,6 +65,10 @@ main { max-width: 760px; margin: 0 auto; padding: 24px 16px 80px; }
 .card img { width: 100%; aspect-ratio: 16/9; object-fit: cover; display: block; }
 .card-body { padding: 16px 20px 20px; }
 .card-no { font-size: 12px; letter-spacing: .2em; color: var(--accent); font-weight: 700; }
+.category {
+  margin-left: 8px; padding: 1px 8px; border-radius: 999px; background: var(--accent-soft);
+  font-size: 11px; letter-spacing: .05em;
+}
 .card-title { font-family: var(--serif); font-size: 22px; line-height: 1.5; margin: 4px 0 8px; }
 .card-lead { color: var(--muted); font-size: 15px; margin: 0; }
 
