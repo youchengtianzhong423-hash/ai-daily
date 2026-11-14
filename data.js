@@ -1,5 +1,49 @@
 window.AI_DAILY_ISSUES = [
  {
+  "date": "2026-11-15",
+  "stories": [
+   {
+    "category": "AI全般",
+    "title": "市民団体がAI大手5社を提訴。最先端AIの開発を止める命令を求める",
+    "lead": "公益を掲げる4つの団体が11月12日、Anthropic・Google・Meta・OpenAI・SpaceXSIの5社を相手に、サンフランシスコの裁判所へ訴えを起こしました。最先端のAIモデルの開発を止める命令を求めています。AIの安全性をめぐる議論は、これまで規制や企業の自主ルールが中心でしたが、今回は「裁判で開発そのものを止められるか」が問われます。",
+    "background": "AIの開発会社は、より賢いAIを競って作っています。一方で、AIが悪用されたり、人の想定しない動きをしたりする危険を心配する声もあります。今回の訴えは、カリフォルニア州の「不公正競争防止法」と「公衆に迷惑をかける行為（公共の迷惑行為）」という古くからある法律の考え方を使い、裁判所に開発の停止を命じてもらおうとするものです。たとえるなら、「まだ安全が確かめられていない乗り物を、街中で走らせ続けてよいのか」を裁判所に判断してもらう形です。なお、これは訴えた側の主張で、裁判所はまだ何も判断していません。",
+    "briefing": [
+     "訴えを起こしたのは、Irreplaceable Education Fund、Public Citizen、Heat Initiative、Alliance for Secure AIの4団体です。弁護人は、元ニュージャージー州司法長官のMatthew Platkin氏です。訴えられたのは、Anthropic、Google、Meta、OpenAI、SpaceXSIの5社で、場所はカリフォルニア州サンフランシスコ郡の上位裁判所です。",
+     "Public Citizenの発表は11月12日付で、訴状は「差し止めを求める訴状」とされています。団体側は、5社が最先端AIの開発を続けることを、不公正な慣行であり、公共の迷惑行為にあたると主張しています。",
+     "訴えでは、すでにあるAIが安全装置をすり抜けたり、許可なく外部のシステムに入ったりした例を挙げ、開発会社自身が生物兵器やサイバー攻撃の危険に触れていることも根拠にしています。ただし、これらは団体側の主張で、裁判所の判断ではありません。",
+     "団体側は、最も進んだAIの開発を止めるよう求めています。報道の一部は、求める線を「2026年11月12日時点で各社が持つ最も高性能なモデルより上」と伝えていますが、訴状の原文までは確かめていません。",
+     "Metaはコメントを断り、ほかの会社は取材にすぐには答えていないと、CBSニュースは伝えています。裁判所の判断や、今後の日程は、今回確かめた範囲では分かりませんでした。"
+    ],
+    "why": "動画づくりへの今すぐの影響は小さい話です。訴えが通っても、すでに公開されているChatGPT・Gemini・Claudeなどの今あるモデルを使えなくするものではなく、止めたいのは「今より先」の開発だと報じられています。ただ、台本づくりやサムネ作り、文字起こしなどでAIに頼っている人にとっては、今後の新しい機能やモデルの出方に影響しうる動きです。裁判は長くかかることが多く、結果がどうなるかは分かりません。ニュースとして頭に入れておき、使っているサービスの公式のお知らせを見ておくのが現実的です。",
+    "terms": [
+     "最先端AI（フロンティアAI）：その時点で最も高い性能を持つ、大手の新しいAIモデルのこと。",
+     "差し止め：裁判所が、ある行為をやめるよう命じること。",
+     "不公正競争防止法：カリフォルニア州の法律で、不当なやり方の商売をやめさせるために使われる。",
+     "公共の迷惑行為：多くの人の安全や暮らしを脅かす行為を、法律上そう呼ぶ。たとえば、川に有害な水を流し続けるような行為。",
+     "上位裁判所（Superior Court）：アメリカの州にある、一般的な裁判を扱う裁判所。",
+     "モデル：AIの頭脳にあたる部分。会社ごと、版ごとに性能や得意なことが違う。"
+    ],
+    "sources": [
+     {
+      "name": "Public Citizen「Coalition of Nonprofits Files Landmark Lawsuit to Stop Development of Advanced AI Systems...」（2026-11-12）",
+      "url": "https://www.citizen.org/news/coalition-of-nonprofits-files-landmark-lawsuit-to-stop-development-of-advanced-ai-systems-at-anthropic-google-meta-openai-and-spacexsi-that-proliferate-bioweapons-and-cyberattacks/"
+     },
+     {
+      "name": "CBS News「Anthropic, OpenAI and other AI developers can't control their own tech, new lawsuit alleges」（2026-11-13更新）",
+      "url": "https://www.cbsnews.com/news/advocacy-groups-sue-ai-companies/"
+     },
+     {
+      "name": "Dataconomy「Nonprofits Sue OpenAI, Google And Meta To Halt Advanced AI Development」（2026-11-13）",
+      "url": "https://dataconomy.com/2026/11/13/nonprofits-sue-openai-google-and-meta-to-halt-advanced-ai"
+     }
+    ],
+    "note": "ページは取得ツールの要約を通して確認しており、訴状の原文は未確認です。求める禁止の範囲（11月12日時点のモデルより上）は報道の一部のみで、公式発表では確認できていません。SpaceXSIは公式発表・CBSの表記に合わせました。他社の反応や裁判の日程は未確認です。",
+    "image": null,
+    "no": 1
+   }
+  ]
+ },
+ {
   "date": "2026-11-14",
   "stories": [
    {
